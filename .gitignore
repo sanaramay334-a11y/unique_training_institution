@@ -1,0 +1,15 @@
+# Sensitive configuration
+db.php
+config.php
+.env
+
+# Database dump
+*.sql
+
+# User uploaded files / private data
+uploads/
+id_card/
+
+# Local/server files
+.DS_Store
+Thumbs.db

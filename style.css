@@ -1,0 +1,517 @@
+body{
+font-family:Arial,sans-serif;
+background:#F1F5F9;
+margin:0;
+padding:0;
+}
+
+.sidebar{
+position:fixed;
+left:0;
+top:0;
+width:240px;
+height:100%;
+background:#0F172A;
+overflow-y:auto;
+}
+
+.sidebar h2{
+color:white;
+text-align:center;
+padding:20px 0;
+margin:0;
+}
+
+.sidebar a{
+display:block;
+color:white;
+padding:14px 20px;
+text-decoration:none;
+}
+
+.sidebar a:hover{
+background:#2563EB;
+}
+
+.main-content{
+margin-left:240px;
+padding:20px;
+}
+
+.welcome-banner{
+height:320px;
+margin:20px;
+border-radius:20px;
+
+background-image:url('images/dashboard-banner.jpg');
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+
+overflow:hidden;
+}
+
+.welcome-overlay{
+background:rgba(255,255,255,0.75);
+
+padding:40px;
+
+width:45%;
+height:100%;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.welcome-overlay h2{
+font-size:48px;
+margin:0;
+color:#0F172A;
+}
+
+.welcome-overlay p{
+font-size:22px;
+color:#334155;
+line-height:1.6;
+}
+
+h1{
+    margin:0 0 20px 0;
+    color:#0F172A;
+    font-size:42px;
+}
+.card{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+flex:1 1 280px;
+}
+.cards-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    width:100%;
+}
+
+.card h3{
+margin-top:0;
+}
+
+.count{
+font-size:40px;
+font-weight:bold;
+color:#2563EB;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+}
+
+table th{
+background:#0F172A;
+color:white;
+padding:12px;
+}
+
+table td{
+padding:12px;
+border:1px solid #ddd;
+}
+
+table tr:hover{
+background:#f5f5f5;
+}
+
+.edit-btn{
+background:#1a4fc2;
+color:white;
+padding:8px 12px;
+border-radius:5px;
+}
+.delete-btn{
+background:#EF4444;
+color:white;
+padding:8px 12px;
+border-radius:5px;
+}
+
+.whatsapp-btn,
+.ai-btn{
+position:fixed;
+right:20px;
+width:65px;
+height:65px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.3);
+z-index:999;
+}
+
+.whatsapp-btn{
+bottom:20px;
+background:#25D366;
+}
+
+.ai-btn{
+bottom:100px;
+background:#2563EB;
+color:white;
+font-size:32px;
+}
+
+.whatsapp-btn img{
+width:35px;
+height:35px;
+}
+.stat-card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+flex:1;
+min-width:220px;
+}
+
+.stat-card .icon{
+font-size:45px;
+margin-bottom:10px;
+}
+
+.stat-card h3{
+margin:0;
+color:#334155;
+}
+
+.stat-card h1{
+margin:10px 0;
+font-size:40px;
+color:#2563EB;
+}
+
+.stat-card a{
+color:#2563EB;
+text-decoration:none;
+font-weight:bold;
+}
+.logo-section{
+text-align:center;
+padding:15px;
+}
+
+.logo{
+    width:70px !important;
+    height:70px !important;
+    max-width:70px !important;
+    max-height:70px !important;
+    object-fit:contain;
+    display:block;
+    margin:auto;
+}
+.logo-section{
+    text-align:center;
+    padding:10px;
+    overflow:hidden;
+}
+.dashboard-row{
+    display:flex;
+    gap:20px;
+    margin-top:20px;
+}
+
+.dashboard-row .card{
+    flex:1;
+}
+/* =========================================
+   MOBILE DASHBOARD RESPONSIVE FIX
+   ========================================= */
+
+html,
+body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+img{
+    max-width:100%;
+}
+
+@media (max-width:768px){
+
+    /* -------------------------
+       SIDEBAR
+       ------------------------- */
+
+    .sidebar{
+        width:240px !important;
+        height:100vh !important;
+
+        position:fixed !important;
+
+        left:0 !important;
+        top:0 !important;
+
+        overflow-y:auto !important;
+
+        z-index:1000;
+    }
+
+
+    /* -------------------------
+       MAIN CONTENT
+       ------------------------- */
+
+    .main-content{
+        margin-left:240px !important;
+
+        width:calc(100% - 240px) !important;
+
+        padding:12px !important;
+
+        overflow:hidden;
+    }
+
+
+    /* -------------------------
+       WELCOME BANNER
+       ------------------------- */
+
+    .welcome-banner{
+
+        height:280px !important;
+
+        margin:10px !important;
+
+        border-radius:16px !important;
+
+        background-size:cover !important;
+
+        background-position:center !important;
+
+        width:calc(100% - 20px) !important;
+    }
+
+
+    .welcome-overlay{
+
+        width:100% !important;
+
+        height:100% !important;
+
+        padding:20px !important;
+
+        background:rgba(255,255,255,0.82) !important;
+    }
+
+
+    .welcome-overlay h2{
+
+        font-size:30px !important;
+
+        line-height:1.2 !important;
+
+        margin:0 0 10px 0 !important;
+    }
+
+
+    .welcome-overlay p{
+
+        font-size:16px !important;
+
+        line-height:1.5 !important;
+
+        margin:0 !important;
+    }
+
+
+    /* -------------------------
+       PAGE HEADING
+       ------------------------- */
+
+    h1{
+
+        font-size:28px !important;
+
+        line-height:1.3 !important;
+
+        margin-bottom:15px !important;
+    }
+
+
+    /* -------------------------
+       CARDS
+       ------------------------- */
+
+    .cards-container{
+
+        display:flex !important;
+
+        flex-direction:column !important;
+
+        width:100% !important;
+
+        gap:15px !important;
+    }
+
+
+    .card{
+
+        width:100% !important;
+
+        min-width:0 !important;
+
+        max-width:100% !important;
+
+        flex:none !important;
+
+        padding:18px !important;
+
+        margin:0 !important;
+    }
+
+
+    .stat-card{
+
+        width:100% !important;
+
+        min-width:0 !important;
+
+        max-width:100% !important;
+
+        flex:none !important;
+
+        padding:20px !important;
+    }
+
+
+    .stat-card .icon{
+
+        font-size:38px !important;
+    }
+
+
+    .stat-card h1{
+
+        font-size:34px !important;
+    }
+
+
+    /* -------------------------
+       DASHBOARD ROW
+       ------------------------- */
+
+    .dashboard-row{
+
+        display:flex !important;
+
+        flex-direction:column !important;
+
+        width:100% !important;
+
+        gap:15px !important;
+
+        margin-top:15px !important;
+    }
+
+
+    .dashboard-row .card{
+
+        width:100% !important;
+
+        flex:none !important;
+    }
+
+
+    /* -------------------------
+       TABLE
+       ------------------------- */
+
+    table{
+
+        width:100% !important;
+
+        min-width:600px;
+    }
+
+
+    .main-content{
+
+        overflow-x:auto;
+    }
+
+
+    /* -------------------------
+       LOGO
+       ------------------------- */
+
+    .logo-section{
+
+        padding:10px !important;
+
+        text-align:center !important;
+    }
+
+
+    .logo{
+
+        width:65px !important;
+
+        height:65px !important;
+
+        max-width:65px !important;
+
+        max-height:65px !important;
+
+        object-fit:contain !important;
+    }
+
+
+    /* -------------------------
+       FLOATING BUTTONS
+       ------------------------- */
+
+    .whatsapp-btn,
+    .ai-btn{
+
+        width:52px !important;
+
+        height:52px !important;
+
+        right:12px !important;
+    }
+
+
+    .whatsapp-btn{
+
+        bottom:15px !important;
+    }
+
+
+    .ai-btn{
+
+        bottom:80px !important;
+
+        font-size:25px !important;
+    }
+
+
+    .whatsapp-btn img{
+
+        width:28px !important;
+
+        height:28px !important;
+    }
+
+}
